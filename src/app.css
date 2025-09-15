@@ -1,0 +1,45 @@
+/* Utilize Monterserrat font */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+	--bg-base: #121212;
+	--bg-lighter: #1f1f1f;
+	--txt-color: white;
+	--secondary-txt-color: #b3b3b3;
+	--primary-font: 'Montserrat', Helvetica;
+	--bold-wt: 900;
+	--medium-wt: 400;
+	--light-wt: 200;
+}
+body::-webkit-scrollbar {
+	display: none; /* WebKit */
+}
+body {
+	background-color: var(--bg-base);
+	font-family: var(--primary-font);
+	color: var(--txt-color);
+	min-height: 100dvh;
+	margin:0;
+}
+
+h1 {
+	font-weight: var(--bold-wt);
+	font-size: 1.5rem;
+}
+
+h2,
+a {
+	font-weight: var(--medium-wt);
+}
+
+h3,
+p {
+	font-weight: var(--light-wt);
+}
+
+/* Links r annoying asl */
+
+a,
+a:visited {
+	color: inherit;
+}
